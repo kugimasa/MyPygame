@@ -14,3 +14,16 @@ I couldn't install with Python3 for some reason :(
 `pip pygame`
 
 ---
+###  Pygame Reference
+
+* Initializing the window of the game
+```python:
+pygame.display.set_mode((width, height), flags, depth)
+```
+flags: collection of additional options
+depth: number of bits to use for color
+
+---
+##  [Tutorials](https://inventwithpython.com/pygame/)
+
+* [Memory Puzzle](/Slides/MemoryPuzzle.md)
