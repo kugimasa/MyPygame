@@ -33,7 +33,7 @@ def generateRevealedBoxesData(val):
     return revealedBoxes
 ```
 
-returns boolean list 
+## returns boolean list 
 
 True : when the item is revealed
 False : when the item is hidden
@@ -61,15 +61,13 @@ def getRandomizedBoard():
     return board
 ```
 
-returns board data structure
-
-get a list of all possible icons 
+## returns board data structure
+Get a list of all possible icons 
 
 shuffle them -> calculate how many of them you need and get 2 each -> shuffle again
 
-delete the first icon (icon[0])  in the  list as we append them so we can add each icon
-
-icon[0] will be updated every time
+Delete the first icon (icon[0])  in the  list as we append them so we can add each icon.
+icon[0] will be updated every time.
 
 ---
 
