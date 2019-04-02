@@ -17,12 +17,15 @@ I couldn't install with Python3 for some reason :(
 ### To Play Your Pygame
 Move to the directory where your python file is at.
 And activate your venv
+
 `source activate <name>`
 
 Execute your pygame.
+
 `python <file>`
 
 If you want to deactivate your env,
+
 `source deactivate <name>`
 
 ---
