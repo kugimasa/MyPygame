@@ -17,6 +17,7 @@ I couldn't install with Python3 for some reason :(
 ### To Play Your Pygame
 Move to the directory where your python file is at.
 And activate your venv
+
 `source activate <name>`
 
 Execute your pygame.
@@ -29,8 +30,10 @@ If you want to deactivate your env,
 ###  Pygame Reference
 
 * Initializing the window of the game
-```python:
+```python
+
 pygame.display.set_mode((width, height), flags, depth)
+
 ```
 flags: collection of additional options
 depth: number of bits to use for color

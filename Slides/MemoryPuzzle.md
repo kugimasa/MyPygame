@@ -26,3 +26,54 @@ template: invert
 |gameWonAnimation()|Plays the "Game Won" animation|
 |hasWon()|Tells if the player won|
 
+---
+## generateRevealedBoxesData()
+
+```python
+def generateRevealedBoxesData(val):
+    revealedBoxes = []
+    for i in range(BOARDWIDTH):
+        revealedBoxes.append([val] * BOARDHEIGHT)
+    return revealedBoxes
+```
+
+returns boolean list 
+
+True : when the item is revealed
+False : when the item is hidden
+
+---
+## getRandomizedBoard()
+
+```python
+def getRandomizedBoard():
+    icons = []
+    for color in ALLCOLORS:
+        for shape in ALLSHAPES:
+            icons.append( (shape, color) )
+
+    random.shuffle(icons) 
+    numIconsUsed = int(BOARDWIDTH * BOARDHEIGHT / 2) 
+    icons = icons[:numIconsUsed] * 2 
+    board = []
+    for x in range(BOARDWIDTH):
+        column = []
+        for y in range(BOARDHEIGHT):
+            column.append(icons[0])
+            del icons[0] 
+        board.append(column)
+    return board
+```
+
+returns board data structure
+
+get a list of all possible icons 
+
+shuffle them -> calculate how many of them you need and get 2 each -> shuffle again
+
+delete the first icon (icon[0])  in the  list as we append them so we can add each icon
+
+icon[0] will be updated every time
+
+---
+
