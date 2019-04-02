@@ -1,7 +1,3 @@
-<!--
-$theme: gaia
-template: invert
--->
 # Memory Puzzle
 ## [python script](../GameFiles/memorypuzzle.py)
 ---
