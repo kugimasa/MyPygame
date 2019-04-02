@@ -33,7 +33,7 @@ def generateRevealedBoxesData(val):
     return revealedBoxes
 ```
 
-## returns boolean list 
+## return : boolean list 
 
 True : when the item is revealed
 False : when the item is hidden
@@ -61,7 +61,7 @@ def getRandomizedBoard():
     return board
 ```
 
-## returns board data structure
+## return : board data structure
 Get a list of all possible icons 
 
 shuffle them -> calculate how many of them you need and get 2 each -> shuffle again
@@ -70,4 +70,60 @@ Delete the first icon (icon[0])  in the  list as we append them so we can add ea
 icon[0] will be updated every time.
 
 ---
+## splitIntoGroupsOf(groupSize, theList)
+
+```python
+def splitIntoGroupsOf(groupSize, theList):
+    # splits a list into a list of lists, where the inner lists have at
+    # most groupSize number of items.
+    result = []
+    for i in range(0, len(theList), groupSize):
+        result.append(theList[i:i + groupSize])
+    return result
+```
+## return : list with a list inside
+
+the inner lists have groupSize number
+
+---
+## leftTopCoordsOfBox(boxx, boxy)
+
+```python
+def leftTopCoordsOfBox(boxx, boxy):
+    # Convert board coordinates to pixel coordinates
+    left = boxx * (BOXSIZE + GAPSIZE) + XMARGIN
+    top = boxy * (BOXSIZE + GAPSIZE) + YMARGIN
+    return (left, top)
+```
+## return : pixel coordinate tuple
+
+boxx, boxy -> Board coordinates
+
+left, top -> Pixel coordiantes
+
+---
+## getBoxAtPixel(x, y)
+
+```python
+def getBoxAtPixel(x, y):
+    for boxx in range(BOARDWIDTH):
+        for boxy in range(BOARDHEIGHT):
+            left, top = leftTopCoordsOfBox(boxx, boxy)
+            boxRect = pygame.Rect(left, top, BOXSIZE, BOXSIZE)
+            if boxRect.collidepoint(x, y):
+                return (boxx, boxy)
+    return (None, None)
+```
+## return : box coordinate tuple IF the mouse clicked the box
+
+convert from pixel coordinates to box coordinates
+
+checking if the mouse cursor clicked the Rect OBJ
+```python
+pygame.Rect().collidepoint(x,y)
+```
+## return : True IF the cursor collided
+
+---
+
 
