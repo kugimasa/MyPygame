@@ -13,10 +13,6 @@ template: invert
 |generateReavealedBoxesData()|Returns a data structre that represents which boxes are covered|
 |getRandomizedBoard()|Returns the state of the board|
 |splitIntoGroupsOf()|Splits a list into a list of lists|
-
----
-|function|behavior|
-|:------:|:------:|
 |leftTopCoordsOfBox()|Converts board -> pixel|
 |getBoxAtPixel()|Converts pixel -> box|
 |drawIcon()|Draws an icon|
@@ -24,10 +20,6 @@ template: invert
 |drawBoxCovers()|Draws boxes in covered or revealed state|
 |revealBoxesAnimation()|Plays the reveal animation|
 |coverBoxesAnimation()|Plays the cover animation|
-
----
-|function|behavior|
-|:------:|:------:|
 |drawBoard()|Draws the current state of the board|
 |drawHighlightBox()|Draws highlighted box|
 |startGameAnimation()|Plays the "Start Game" animation|
