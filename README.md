@@ -47,4 +47,4 @@ depth: number of bits to use for color
 ---
 ## My PyGame
 
-* [Catch The Cat](/Gamefiles/catanimation.py)(Under construction ...??)
+* [Catch The Cat](/GameFiles/catanimation.py)(Under construction ...??)
