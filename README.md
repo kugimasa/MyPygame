@@ -7,9 +7,15 @@ template: invert
 #### Step1 : Create an virtual enviornment.
 `python2.7 -m venv <name>`
 
-I couldn't install with Python3 for some reason :(
+~I couldn't install with Python3 for some reason :(~
+
+`python3 -m venv <name>`
+
+`<name>` directory will be created
+
 #### Step2 : Activate your venv.
-`source activate <name>`
+`source <name>/bin/activate`
+
 #### Step3 : Install Pygame using pip.
 `pip pygame`
 
@@ -18,7 +24,7 @@ I couldn't install with Python3 for some reason :(
 Move to the directory where your python file is at.
 And activate your venv
 
-`source activate <name>`
+`source activate <name>/bin/activate`
 
 Execute your pygame.
 
@@ -26,7 +32,7 @@ Execute your pygame.
 
 If you want to deactivate your env,
 
-`source deactivate <name>`
+`source deactivate <name>/bin/activate`
 
 ---
 ###  Pygame Reference
@@ -49,6 +55,8 @@ depth: number of bits to use for color
 
 * [Catch The Cat](/GameFiles/catanimation.py)(Under construction ...??)
 
-
 Cat collision detecting
 ![cat](/Assets/cat_caught.gif)
+
+* [Just a box](/GameFiles/box.py)
+
