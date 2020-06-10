@@ -48,3 +48,7 @@ depth: number of bits to use for color
 ## My PyGame
 
 * [Catch The Cat](/GameFiles/catanimation.py)(Under construction ...??)
+
+
+Cat collision detecting
+![cat](/Assets/cat_caught.gif)
